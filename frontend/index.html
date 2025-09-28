@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurante Órdenes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Restaurante · Órdenes</h1>
+
+    <section id="auth">
+      <div class="card">
+        <h2>Registro de cliente</h2>
+        <input id="reg-nombre" placeholder="Nombre" />
+        <input id="reg-email" placeholder="Email" type="email" />
+        <input id="reg-tel" placeholder="Teléfono" />
+        <button id="btn-registrar">Registrar</button>
+        <p class="msg" id="reg-msg"></p>
+      </div>
+
+      <div class="card">
+        <h2>Login</h2>
+        <input id="log-email" placeholder="Email" type="email" />
+        <input id="log-tel" placeholder="Teléfono" />
+        <button id="btn-login">Entrar</button>
+        <p class="msg" id="log-msg"></p>
+      </div>
+    </section>
+
+    <section id="app" class="hidden">
+      <div class="bar">
+        <span id="hello"></span>
+        <button id="btn-logout">Salir</button>
+      </div>
+
+      <div class="card">
+        <h2>Nueva orden</h2>
+        <input id="orden-platillo" placeholder="Platillo (ej. Tacos al Pastor)" />
+        <input id="orden-notes" placeholder="Notas (ej. sin cebolla)" />
+        <button id="btn-crear-orden">Crear orden</button>
+        <p class="msg" id="orden-msg"></p>
+      </div>
+
+      <div class="card">
+        <h2>Mis órdenes</h2>
+        <ul id="ordenes-list"></ul>
+      </div>
+    </section>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
