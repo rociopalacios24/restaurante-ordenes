@@ -1,7 +1,7 @@
 // Cambia esta URL cuando despliegues el backend en Render
 const API = (location.hostname === 'localhost')
   ? 'http://localhost:3000'
-  : 'https://TU-BACKEND-RENDER.onrender.com';
+  : 'https://restaurante-ordenes.onrender.com';
 
 const qs = (s) => document.querySelector(s);
 
